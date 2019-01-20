@@ -1,0 +1,7 @@
+<section class="phx-hero">
+  <h1>Welcome, please enter the number of nodes to start the bitcoin simulation</h1>
+  <%= form_for @conn, "//localhost:4000/", fn f -> %>
+      <%= text_input f, :number %>
+      <%= submit "Start" %>
+  <% end %>
+</section>
